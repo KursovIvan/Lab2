@@ -6,7 +6,7 @@
 [Lab2.cpp](https://github.com/KursovIvan/Lab2/blob/main/Lab2/Lab2/Lab2.cpp)
 Запустить программу можно файлом
 [Lab2.exe](https://github.com/KursovIvan/Lab2/blob/main/Lab2/Debug/Lab2.exe)
-# Скриншот консоли
+# Скриншоты консоли
 ![Скриншот](https://github.com/KursovIvan/Lab2/blob/main/Screenshots/Test01.jpg)
 ![Скриншот](https://github.com/KursovIvan/Lab2/blob/main/Screenshots/Test02.jpg)
 ![Скриншот](https://github.com/KursovIvan/Lab2/blob/main/Screenshots/Test03.jpg)
