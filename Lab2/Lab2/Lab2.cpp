@@ -2,15 +2,30 @@
 #include <conio.h>
 
 using namespace std;
+
+int enterNumber()
+{
+    int num = 0;
+    while (true)
+    {
+        cout << "Введите число не превышающее 9999, большее 0: " << endl;
+        cin >> num;
+
+        if (cin.fail() || cin.peek() != '\n' || num <= 0 || num > 9999)
+        {
+            cout << "Некорректный ввод" << endl;
+            cin.clear();
+            cin.ignore(cin.rdbuf()->in_avail());
+        }
+        else return num;
+    }
+}
 int main()
 {
     setlocale(LC_ALL, "Russian");
 
     int num = 0;
-
-    cout << "Введите число не превышающее 9999: " << endl;
-
-    cin >> num;
+    num = enterNumber();
 
     if (num > 999)
     {
@@ -157,7 +172,7 @@ int main()
         }
     }
 
-    if ((num % 10 == 0) || (num % 10 > 4) || ((9 < num % 100) & (num % 100 < 20)))
+    if ((num % 10 == 0) || (num % 10 > 3) || ((9 < num % 100) && (num % 100 < 20)))
     {
         cout << "рублей";
     }
